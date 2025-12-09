@@ -12,11 +12,9 @@ Concept marketing site + blueprint for a hybrid fitness brand.
 - Motion + hover cues documented for developers.
 - Purposeful copy tied to the job brief.
 
-## Run Locally
-```bash
-npm install
-npm run dev
-# npm run build before deploying to Vercel
-```
+## Collaboration Notes
+- Blueprint route provides the annotated sitemap, responsive grid decisions, and motion notes used for developer handoff.
+- Supporting docs capture the design system tokens plus the story behind each page section.
+- Design file: [Horizon Fitness Systems](https://www.figma.com/file/gamemaker-horizon/Horizon-Fitness-Systems?type=design).
 
-Ship the folder to Vercel with build command `next build`. Include the live URL + your actual Figma link in `docs/design-system.md` when applying.
+Deploy on Vercel using the standard Next.js workflow (`next build`). Share the live URL and Figma reference so reviewers can inspect both the visual polish and the process documentation.
