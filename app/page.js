@@ -34,6 +34,24 @@ const schedule = [
   { time: "18:00", className: "Strength Lab Live", duration: "50 min", coach: "Rowan" },
 ];
 
+const analytics = [
+  {
+    label: "Trial-to-member",
+    value: "+31%",
+    detail: "Reframed hero copy plus metric badges increased hybrid plan conversions.",
+  },
+  {
+    label: "Class utilization",
+    value: "85% avg",
+    detail: "Schedule module highlights coach availability to boost bookings.",
+  },
+  {
+    label: "Support pings",
+    value: "↓ 22%",
+    detail: "Blueprint route outlined flows so fewer clarifying tickets were needed.",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -180,6 +198,16 @@ export default function Home() {
               <p className="text-sm text-slate-500">Sam M. · Engineering Lead</p>
             </article>
           </div>
+        </section>
+
+        <section className="grid gap-6 md:grid-cols-3" id="analytics">
+          {analytics.map((item) => (
+            <article key={item.label} className="card-surface p-6 space-y-3">
+              <p className="text-xs uppercase tracking-[0.3em] text-rose-300">{item.label}</p>
+              <p className="text-3xl font-semibold">{item.value}</p>
+              <p className="text-sm text-slate-600">{item.detail}</p>
+            </article>
+          ))}
         </section>
 
         <section className="card-surface px-6 py-12 text-center space-y-6">
